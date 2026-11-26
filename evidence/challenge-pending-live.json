@@ -1,0 +1,8 @@
+{
+  "challenge_pending": true,
+  "outcome": "INCONCLUSIVE",
+  "release_id": "rolloutguard-release-1",
+  "round": 1,
+  "observed_state": "ACCEPTED",
+  "observed_via": "Studio effective_result view after challenge"
+}

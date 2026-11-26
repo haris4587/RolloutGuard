@@ -2,6 +2,8 @@
 
 A standalone GenLayer Intelligent Contract for assessing staged feature releases against immutable rollout policies. It records assessments; it never changes feature flags, controls deployments, or executes rollbacks.
 
+**Deployed:** [Studionet contract](https://explorer-studio.genlayer.com/address/0xE7c1189ad8d66463767AA08098c028FC634E06B4) · **43 tests passed** · [Live receipts and validation](EVIDENCE.md)
+
 ## What it verifies
 
 Teams lock a feature, environment, accountable accounts, ordered stages, exposure caps, minimum dwell times, minimum request counts, error-rate limits, p95 latency limits, rollback deadline, and semantic requirements. The operator opens a release against a full Git commit SHA, submits a bounded evidence bundle, and a precommitted attestor signs its exact SHA-256 through an on-chain transaction.

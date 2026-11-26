@@ -1,0 +1,113 @@
+{
+  "rolloutguard-release-1": {
+    "attestation": {
+      "account": "0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e",
+      "at": 1795680159,
+      "sha256": "19db52968fc5fcaf693055a6b01eb3bf02230132b1c98c719c5b00fc94eb1e31"
+    },
+    "challenge": "Please independently recheck whether the locked EU cohort requirement and monitoring coverage are supported by all three evidence narratives. This challenge makes no additional factual allegation.",
+    "evidence": {
+      "bytes": 1432,
+      "raw": "{\"complete\":true,\"coverage_note\":\"Synthetic validation records covering all observed stages; not production telemetry.\",\"environment\":\"production\",\"feature\":\"search-v2\",\"release_commit\":\"18a4856feb59e85d2be9a6c4adb509736eb9fbcb\",\"stages\":[{\"end\":1795680072,\"errors\":2,\"flag_evidence\":\"search-v2 production commit 18a4856feb59e85d2be9a6c4adb509736eb9fbcb: only opted-in EU cohort enabled; peak exposure 1000 basis points of all users.\",\"id\":\"canary\",\"incident_evidence\":\"No rollout incident or rollback trigger occurred during this stage. No rollback was performed.\",\"monitoring_evidence\":\"All requests in the opted-in EU cohort were monitored: 1000 requests, 2 errors, p95 200 ms. No monitoring gaps.\",\"p95_ms\":200,\"peak_exposure_bps\":1000,\"requests\":1000,\"rollback_at\":0,\"rollback_exposure_bps\":0,\"start\":1795680070,\"triggered_at\":0},{\"end\":1795680074,\"errors\":2,\"flag_evidence\":\"search-v2 production commit 18a4856feb59e85d2be9a6c4adb509736eb9fbcb: only opted-in EU cohort enabled; peak exposure 5000 basis points of all users.\",\"id\":\"expand\",\"incident_evidence\":\"No rollout incident or rollback trigger occurred during this stage. No rollback was performed.\",\"monitoring_evidence\":\"All requests in the opted-in EU cohort were monitored: 1000 requests, 2 errors, p95 200 ms. No monitoring gaps.\",\"p95_ms\":200,\"peak_exposure_bps\":5000,\"requests\":1000,\"rollback_at\":0,\"rollback_exposure_bps\":0,\"start\":1795680072,\"triggered_at\":0}]}",
+      "sha256": "19db52968fc5fcaf693055a6b01eb3bf02230132b1c98c719c5b00fc94eb1e31"
+    },
+    "release": {
+      "opened_at": 1795680068,
+      "policy_hash": "bbc842cab6a89ed06cb7bbb6b9b65a288a58206a8703ab500558739c6af5b73d",
+      "release_commit": "18a4856feb59e85d2be9a6c4adb509736eb9fbcb"
+    },
+    "rounds": 2,
+    "receipts": [
+      {
+        "actor": "0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e",
+        "at": 1795680193,
+        "chain_id": 61999,
+        "contract": "0xE7c1189ad8d66463767AA08098c028FC634E06B4",
+        "data": {
+          "attestation_hash": "04aa3e43e523e4a721e72a70eec009d713c95b0e5582a1c8e3add687e1f9720c",
+          "challenge_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "decision_hash": "e7a71a207b533ca681c1dd15e281e374957245eb69edca5027ef69ddc106de4e",
+          "evidence_sha256": "19db52968fc5fcaf693055a6b01eb3bf02230132b1c98c719c5b00fc94eb1e31",
+          "policy_hash": "bbc842cab6a89ed06cb7bbb6b9b65a288a58206a8703ab500558739c6af5b73d",
+          "release_hash": "030ee35bc93e1b4a1155059db522d080a1321b0f3992b14313b1ead75ad6816f",
+          "result": {
+            "attested": true,
+            "outcome": "COMPLIANT",
+            "scope": "attested_submitted_records_only",
+            "unknown_stages": [],
+            "violations": []
+          },
+          "review": {
+            "canary": {
+              "flag_quote": "search-v2 production commit 18a4856feb59e85d2be9a6c4adb509736eb9fbcb: only opted-in EU cohort enabled; peak exposure 1000 basis points of all users.",
+              "incident_quote": "No rollout incident or rollback trigger occurred during this stage. No rollback was performed.",
+              "monitor_quote": "All requests in the opted-in EU cohort were monitored: 1000 requests, 2 errors, p95 200 ms. No monitoring gaps.",
+              "status": "SUPPORTED"
+            },
+            "expand": {
+              "flag_quote": "search-v2 production commit 18a4856feb59e85d2be9a6c4adb509736eb9fbcb: only opted-in EU cohort enabled; peak exposure 5000 basis points of all users.",
+              "incident_quote": "No rollout incident or rollback trigger occurred during this stage. No rollback was performed.",
+              "monitor_quote": "All requests in the opted-in EU cohort were monitored: 1000 requests, 2 errors, p95 200 ms. No monitoring gaps.",
+              "status": "SUPPORTED"
+            }
+          },
+          "round": 1
+        },
+        "event_hash": "3bed7555ccab5878ce1291cefef214d9dda5583d3f8699a4b0d79667a81a1e9d",
+        "kind": "ASSESS",
+        "previous_hash": "af0a2466b819e868c45b2fc0e5363f92bf999d73216337c93132ce0847aec7a2",
+        "release_id": "rolloutguard-release-1",
+        "sequence": 5,
+        "version": 1
+      },
+      {
+        "actor": "0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e",
+        "at": 1795680454,
+        "chain_id": 61999,
+        "contract": "0xE7c1189ad8d66463767AA08098c028FC634E06B4",
+        "data": {
+          "attestation_hash": "04aa3e43e523e4a721e72a70eec009d713c95b0e5582a1c8e3add687e1f9720c",
+          "challenge_hash": "c6cc3adf10fdf1f458f1c3f840cb61de5309f29249665138239e56b486fcc17a",
+          "decision_hash": "e7a71a207b533ca681c1dd15e281e374957245eb69edca5027ef69ddc106de4e",
+          "evidence_sha256": "19db52968fc5fcaf693055a6b01eb3bf02230132b1c98c719c5b00fc94eb1e31",
+          "policy_hash": "bbc842cab6a89ed06cb7bbb6b9b65a288a58206a8703ab500558739c6af5b73d",
+          "release_hash": "030ee35bc93e1b4a1155059db522d080a1321b0f3992b14313b1ead75ad6816f",
+          "result": {
+            "attested": true,
+            "outcome": "COMPLIANT",
+            "scope": "attested_submitted_records_only",
+            "unknown_stages": [],
+            "violations": []
+          },
+          "review": {
+            "canary": {
+              "flag_quote": "only opted-in EU cohort enabled; peak exposure 1000 basis points of all users.",
+              "incident_quote": "No rollout incident or rollback trigger occurred during this stage. No rollback was performed.",
+              "monitor_quote": "All requests in the opted-in EU cohort were monitored: 1000 requests, 2 errors, p95 200 ms. No monitoring gaps.",
+              "status": "SUPPORTED"
+            },
+            "expand": {
+              "flag_quote": "only opted-in EU cohort enabled; peak exposure 5000 basis points of all users.",
+              "incident_quote": "No rollout incident or rollback trigger occurred during this stage. No rollback was performed.",
+              "monitor_quote": "All requests in the opted-in EU cohort were monitored: 1000 requests, 2 errors, p95 200 ms. No monitoring gaps.",
+              "status": "SUPPORTED"
+            }
+          },
+          "round": 2
+        },
+        "event_hash": "5af5e4f849b251587a8e1146aeae1668cdebb80e5749867b8473b364303d8baa",
+        "kind": "ASSESS",
+        "previous_hash": "541a889f1b8a11b59eb0caf2bd092ea837c9faca5e6de60cc837997c0f2cde43",
+        "release_id": "rolloutguard-release-1",
+        "sequence": 7,
+        "version": 1
+      }
+    ],
+    "effective": {
+      "challenge_pending": false,
+      "outcome": "COMPLIANT",
+      "release_id": "rolloutguard-release-1",
+      "round": 2
+    }
+  }
+}

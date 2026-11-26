@@ -15,3 +15,5 @@ Every event hashes canonical JSON containing version, chain ID, contract, sequen
 - `evidence/schema.json`: local SDK ABI extraction.
 - `evidence/schema-live.json`: ABI accepted by the hosted Studionet RPC, independently of deployment availability.
 - Live deployment status, successful transactions and exported receipts are recorded in `DEPLOYMENT.md` when available. An accepted schema is not a deployment.
+
+Transaction exports are labelled RPC projections: they retain transaction identity, finality, execution outcome, execution mode, validator votes, leader findings and equivalence outputs. Repeated binary calldata, contract state, logs and historical consensus copies are omitted. The read-only exporter validates the original RPC response before projecting it. Re-run it to independently check the network instead of trusting saved files.

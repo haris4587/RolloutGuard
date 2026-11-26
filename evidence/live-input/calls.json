@@ -1,0 +1,51 @@
+[
+  {
+    "method": "lock_policy",
+    "args": [
+      "{\"attestor\":\"0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e\",\"environment\":\"production\",\"feature\":\"search-v2\",\"operator\":\"0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e\",\"reviewer\":\"0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e\",\"rollback_seconds\":120,\"semantic_requirements\":\"Only the opted-in EU cohort may receive search-v2. All requests in that cohort must be monitored. Incident evidence must explicitly describe whether a rollback trigger occurred.\",\"separate_duties\":false,\"stages\":[{\"id\":\"canary\",\"max_error_bps\":100,\"max_exposure_bps\":1000,\"max_p95_ms\":300,\"min_duration_seconds\":1,\"min_requests\":100},{\"id\":\"expand\",\"max_error_bps\":100,\"max_exposure_bps\":5000,\"max_p95_ms\":300,\"min_duration_seconds\":1,\"min_requests\":100}]}"
+    ]
+  },
+  {
+    "method": "open_release",
+    "args": [
+      "rolloutguard-release-1",
+      "bbc842cab6a89ed06cb7bbb6b9b65a288a58206a8703ab500558739c6af5b73d",
+      "18a4856feb59e85d2be9a6c4adb509736eb9fbcb"
+    ]
+  },
+  {
+    "method": "submit_evidence",
+    "args": [
+      "rolloutguard-release-1",
+      "{\"complete\":true,\"coverage_note\":\"Synthetic validation records covering all observed stages; not production telemetry.\",\"environment\":\"production\",\"feature\":\"search-v2\",\"release_commit\":\"18a4856feb59e85d2be9a6c4adb509736eb9fbcb\",\"stages\":[{\"end\":1795680072,\"errors\":2,\"flag_evidence\":\"search-v2 production commit 18a4856feb59e85d2be9a6c4adb509736eb9fbcb: only opted-in EU cohort enabled; peak exposure 1000 basis points of all users.\",\"id\":\"canary\",\"incident_evidence\":\"No rollout incident or rollback trigger occurred during this stage. No rollback was performed.\",\"monitoring_evidence\":\"All requests in the opted-in EU cohort were monitored: 1000 requests, 2 errors, p95 200 ms. No monitoring gaps.\",\"p95_ms\":200,\"peak_exposure_bps\":1000,\"requests\":1000,\"rollback_at\":0,\"rollback_exposure_bps\":0,\"start\":1795680070,\"triggered_at\":0},{\"end\":1795680074,\"errors\":2,\"flag_evidence\":\"search-v2 production commit 18a4856feb59e85d2be9a6c4adb509736eb9fbcb: only opted-in EU cohort enabled; peak exposure 5000 basis points of all users.\",\"id\":\"expand\",\"incident_evidence\":\"No rollout incident or rollback trigger occurred during this stage. No rollback was performed.\",\"monitoring_evidence\":\"All requests in the opted-in EU cohort were monitored: 1000 requests, 2 errors, p95 200 ms. No monitoring gaps.\",\"p95_ms\":200,\"peak_exposure_bps\":5000,\"requests\":1000,\"rollback_at\":0,\"rollback_exposure_bps\":0,\"start\":1795680072,\"triggered_at\":0}]}",
+      "19db52968fc5fcaf693055a6b01eb3bf02230132b1c98c719c5b00fc94eb1e31",
+      1432
+    ]
+  },
+  {
+    "method": "attest_evidence",
+    "args": [
+      "rolloutguard-release-1",
+      "19db52968fc5fcaf693055a6b01eb3bf02230132b1c98c719c5b00fc94eb1e31"
+    ]
+  },
+  {
+    "method": "assess",
+    "args": [
+      "rolloutguard-release-1"
+    ]
+  },
+  {
+    "method": "challenge",
+    "args": [
+      "rolloutguard-release-1",
+      "Recheck cohort scope, monitoring completeness and incident evidence against the locked policy."
+    ]
+  },
+  {
+    "method": "assess",
+    "args": [
+      "rolloutguard-release-1"
+    ]
+  }
+]

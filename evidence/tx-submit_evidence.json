@@ -1,0 +1,109 @@
+{
+  "export_format": "rolloutguard-rpc-projection-v1",
+  "omitted": "Repeated binary calldata, state, logs and consensus history; verifier checks original RPC response before export.",
+  "hash": "0xf435e382cc041518b9abf3e052fd0e936e0e6c028c07432b66bc8c9bd5517e04",
+  "from_address": "0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e",
+  "to_address": "0xE7c1189ad8d66463767AA08098c028FC634E06B4",
+  "statusName": "FINALIZED",
+  "result_name": "MAJORITY_AGREE",
+  "txExecutionResultName": "FINISHED_WITH_RETURN",
+  "leader_only": false,
+  "execution_mode": "NORMAL",
+  "created_at": "2026-11-26T08:02:12.518024+00:00",
+  "fees": {
+    "deposit": "94353600002588",
+    "userValue": "0",
+    "distribution": {
+      "leaderTimeunitsAllocation": "100",
+      "validatorTimeunitsAllocation": "200",
+      "appealRounds": "0",
+      "executionBudgetPerRound": "94353600000000",
+      "totalMessageFees": "0",
+      "rotations": [
+        "0"
+      ],
+      "maxPriceGenPerTimeUnit": "2",
+      "storageFeeMaxGasPrice": "300000000",
+      "receiptFeeMaxGasPrice": "300000000"
+    },
+    "locked": {
+      "genPerTimeUnit": "1",
+      "storageUnitPrice": "250000000",
+      "receiptGasPrice": "250000000"
+    },
+    "consumed": {
+      "executionConsumed": "78628000000000",
+      "storageFeeUsed": "0",
+      "messageFeesConsumed": "0",
+      "messageFeesBudgetTotal": "0",
+      "leaderTimeunitsUsed": "1",
+      "validatorTimeunitsUsed": "4",
+      "perRound": [
+        {
+          "round": 0,
+          "consensusRound": "Accepted",
+          "leaderTimeunits": "1",
+          "validatorTimeunits": "4",
+          "maxValidatorTimeunits": "1"
+        }
+      ]
+    }
+  },
+  "consensus_data": {
+    "votes": {
+      "0x6DC61b906F74F44612c5545b0b79486133B3556d": "agree",
+      "0x813890bC5bEDEB4F5437570962379F04738F18Cb": "idle",
+      "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "agree",
+      "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "agree",
+      "0xE74a9088aD4d6dBf3C8cABcC0B91072d2a8c8afa": "agree"
+    },
+    "leader_receipt": [
+      {
+        "mode": "leader",
+        "vote": null,
+        "execution_result": "SUCCESS",
+        "nondet_disagree": null,
+        "model": "policy:prd-gpt-oss-120b",
+        "eq_outputs": {},
+        "result": "\"{\\\"actor\\\":\\\"0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e\\\",\\\"at\\\":1795680132,\\\"chain_id\\\":61999,\\\"contract\\\":\\\"0xE7c1189ad8d66463767AA08098c028FC634E06B4\\\",\\\"data\\\":{\\\"bytes\\\":1432,\\\"canonical_hash\\\":\\\"19db52968fc5fcaf693055a6b01eb3bf02230132b1c98c719c5b00fc94eb1e31\\\",\\\"sha256\\\":\\\"19db52968fc5fcaf693055a6b01eb3bf02230132b1c98c719c5b00fc94eb1e31\\\"},\\\"event_hash\\\":\\\"211656281c552abc9df3942669d91eacb77d14435dc9ed58c95bacfbaf40ca3c\\\",\\\"kind\\\":\\\"EVIDENCE\\\",\\\"previous_hash\\\":\\\"ce2c275a6a6fcf4bee38bc1b4952bc023cde40ddb5e97c718fc533647a029e9c\\\",\\\"release_id\\\":\\\"rolloutguard-release-1\\\",\\\"sequence\\\":3,\\\"version\\\":1}\""
+      },
+      {
+        "mode": "validator",
+        "vote": "agree",
+        "execution_result": "SUCCESS",
+        "nondet_disagree": null,
+        "model": "policy:prd-gpt-oss-120b",
+        "result": "\"{\\\"actor\\\":\\\"0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e\\\",\\\"at\\\":1795680132,\\\"chain_id\\\":61999,\\\"contract\\\":\\\"0xE7c1189ad8d66463767AA08098c028FC634E06B4\\\",\\\"data\\\":{\\\"bytes\\\":1432,\\\"canonical_hash\\\":\\\"19db52968fc5fcaf693055a6b01eb3bf02230132b1c98c719c5b00fc94eb1e31\\\",\\\"sha256\\\":\\\"19db52968fc5fcaf693055a6b01eb3bf02230132b1c98c719c5b00fc94eb1e31\\\"},\\\"event_hash\\\":\\\"211656281c552abc9df3942669d91eacb77d14435dc9ed58c95bacfbaf40ca3c\\\",\\\"kind\\\":\\\"EVIDENCE\\\",\\\"previous_hash\\\":\\\"ce2c275a6a6fcf4bee38bc1b4952bc023cde40ddb5e97c718fc533647a029e9c\\\",\\\"release_id\\\":\\\"rolloutguard-release-1\\\",\\\"sequence\\\":3,\\\"version\\\":1}\""
+      }
+    ],
+    "validators": [
+      {
+        "mode": "validator",
+        "vote": "idle",
+        "execution_result": "ERROR",
+        "nondet_disagree": null
+      },
+      {
+        "mode": "validator",
+        "vote": "agree",
+        "execution_result": "SUCCESS",
+        "nondet_disagree": null,
+        "model": "policy:prd-gemini-3.5-flash-lite"
+      },
+      {
+        "mode": "validator",
+        "vote": "agree",
+        "execution_result": "SUCCESS",
+        "nondet_disagree": null,
+        "model": "policy:prd-gpt-6.1-sol"
+      },
+      {
+        "mode": "validator",
+        "vote": "agree",
+        "execution_result": "SUCCESS",
+        "nondet_disagree": null,
+        "model": "policy:prd-gpt-6.1-sol"
+      }
+    ]
+  }
+}

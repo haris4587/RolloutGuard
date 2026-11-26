@@ -1,1 +1,48 @@
-{"network":"studionet","chain_id":61999,"address":"0xE7c1189ad8d66463767AA08098c028FC634E06B4","account":"0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e","transactions":[{"action":"deploy","hash":"0x23cc02c983597327ae1dbe292104902017832d9ff2d3677b3fc6ca02faf14307"}],"release_ids":[]}
+{
+  "network": "studionet",
+  "chain_id": 61999,
+  "address": "0xE7c1189ad8d66463767AA08098c028FC634E06B4",
+  "account": "0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e",
+  "transactions": [
+    {
+      "action": "deploy",
+      "hash": "0x23cc02c983597327ae1dbe292104902017832d9ff2d3677b3fc6ca02faf14307"
+    },
+    {
+      "action": "lock_policy",
+      "hash": "0xf20fc7eacd6d31bef7954ec27d0045685afd227b153f087838811c8131f802b1"
+    },
+    {
+      "action": "open_release",
+      "hash": "0xd8e079ce3c7abd61239d93a2ef7ba7d18204f17cb90eba6a5ec28e59d15fdeae"
+    },
+    {
+      "action": "submit_evidence",
+      "hash": "0xf435e382cc041518b9abf3e052fd0e936e0e6c028c07432b66bc8c9bd5517e04"
+    },
+    {
+      "action": "attest_evidence",
+      "hash": "0x557e4384a499038102e743a581d8880c8db1ff483eec3a9d987b5fa07b556f3d"
+    },
+    {
+      "action": "assess-1",
+      "hash": "0xd815d3d80a2b7e3fe012d69feb6f3c239c2f256a2ffbe7ec5d07cba60eed954e"
+    },
+    {
+      "action": "challenge",
+      "hash": "0x75a1d8cea27b15d10bccb37527fa0a6869485e1652bbcd545cf78bad8e73e664"
+    },
+    {
+      "action": "assess-2-rejected",
+      "hash": "0x40f3938d96c2bef2551b186a0dc8db33157e772bdccda531be4df006ac8c2481",
+      "expected_consensus": "MAJORITY_DISAGREE"
+    },
+    {
+      "action": "assess-2-retry",
+      "hash": "0x992d6c8d06c2df7e42eb8af952380798fc0e57ff68c648ab4d1504eeaf872080"
+    }
+  ],
+  "release_ids": [
+    "rolloutguard-release-1"
+  ]
+}

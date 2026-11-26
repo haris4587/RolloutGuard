@@ -1,0 +1,145 @@
+{
+  "source_matches": true,
+  "source_sha256": "3798015127bfa9fdd1b66669b135b2d25a80fd1296fb3990627914d6226d1635",
+  "status": {
+    "events": 7,
+    "head": "5af5e4f849b251587a8e1146aeae1668cdebb80e5749867b8473b364303d8baa",
+    "version": 1
+  },
+  "transactions": [
+    {
+      "action": "deploy",
+      "hash": "0x23cc02c983597327ae1dbe292104902017832d9ff2d3677b3fc6ca02faf14307",
+      "status": "FINALIZED",
+      "result": "MAJORITY_AGREE",
+      "leader_only": false,
+      "votes": {
+        "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "agree",
+        "0x240d2d7c8DF220110c26cfFFC532479319Cca0dC": "agree",
+        "0x4eeaD269a60bB89c98a23c1BCd0bd101CafD90E0": "idle",
+        "0x5e880d85a70De78dDEf86236d57c42e73F560615": "idle",
+        "0xe358f855C96d8E7243836cf986eb037175B9467e": "agree"
+      }
+    },
+    {
+      "action": "lock_policy",
+      "hash": "0xf20fc7eacd6d31bef7954ec27d0045685afd227b153f087838811c8131f802b1",
+      "status": "FINALIZED",
+      "result": "MAJORITY_AGREE",
+      "leader_only": false,
+      "votes": {
+        "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "agree",
+        "0x22Eda431B7fBC1216baE3b077a78c973a8719c58": "agree",
+        "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "idle",
+        "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "agree",
+        "0xe358f855C96d8E7243836cf986eb037175B9467e": "idle"
+      }
+    },
+    {
+      "action": "open_release",
+      "hash": "0xd8e079ce3c7abd61239d93a2ef7ba7d18204f17cb90eba6a5ec28e59d15fdeae",
+      "status": "FINALIZED",
+      "result": "MAJORITY_AGREE",
+      "leader_only": false,
+      "votes": {
+        "0x240d2d7c8DF220110c26cfFFC532479319Cca0dC": "idle",
+        "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "agree",
+        "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "agree",
+        "0xE74a9088aD4d6dBf3C8cABcC0B91072d2a8c8afa": "agree",
+        "0xe358f855C96d8E7243836cf986eb037175B9467e": "idle"
+      }
+    },
+    {
+      "action": "submit_evidence",
+      "hash": "0xf435e382cc041518b9abf3e052fd0e936e0e6c028c07432b66bc8c9bd5517e04",
+      "status": "FINALIZED",
+      "result": "MAJORITY_AGREE",
+      "leader_only": false,
+      "votes": {
+        "0x6DC61b906F74F44612c5545b0b79486133B3556d": "agree",
+        "0x813890bC5bEDEB4F5437570962379F04738F18Cb": "idle",
+        "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "agree",
+        "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "agree",
+        "0xE74a9088aD4d6dBf3C8cABcC0B91072d2a8c8afa": "agree"
+      }
+    },
+    {
+      "action": "attest_evidence",
+      "hash": "0x557e4384a499038102e743a581d8880c8db1ff483eec3a9d987b5fa07b556f3d",
+      "status": "FINALIZED",
+      "result": "MAJORITY_AGREE",
+      "leader_only": false,
+      "votes": {
+        "0x534af64FFB6796Bc69aBf4C26c50788F1fFAfe56": "agree",
+        "0x5e880d85a70De78dDEf86236d57c42e73F560615": "idle",
+        "0x6DC61b906F74F44612c5545b0b79486133B3556d": "agree",
+        "0x6fe9DE3d0adc76D6416A13CD8107aaE49A3CF98F": "agree",
+        "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "idle"
+      }
+    },
+    {
+      "action": "assess-1",
+      "hash": "0xd815d3d80a2b7e3fe012d69feb6f3c239c2f256a2ffbe7ec5d07cba60eed954e",
+      "status": "FINALIZED",
+      "result": "MAJORITY_AGREE",
+      "leader_only": false,
+      "votes": {
+        "0x21e4F7ba6Ec0fbf70C019fbc0F9A797c3ed1F969": "agree",
+        "0x23A15A452F19D1B616276fedC5B8B51d69082959": "agree",
+        "0x5744305308D62592B7De585e1999c4Ea51E03C29": "disagree",
+        "0xBE58b43DF1d991e054F743Cc5571dD7029F3B888": "disagree",
+        "0xE74a9088aD4d6dBf3C8cABcC0B91072d2a8c8afa": "agree"
+      }
+    },
+    {
+      "action": "challenge",
+      "hash": "0x75a1d8cea27b15d10bccb37527fa0a6869485e1652bbcd545cf78bad8e73e664",
+      "status": "FINALIZED",
+      "result": "MAJORITY_AGREE",
+      "leader_only": false,
+      "votes": {
+        "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "agree",
+        "0x240d2d7c8DF220110c26cfFFC532479319Cca0dC": "idle",
+        "0x6fe9DE3d0adc76D6416A13CD8107aaE49A3CF98F": "idle",
+        "0xe358f855C96d8E7243836cf986eb037175B9467e": "agree",
+        "0xee46B9Dc4c860149B1d140840284e5374854e746": "agree"
+      }
+    },
+    {
+      "action": "assess-2-rejected",
+      "hash": "0x40f3938d96c2bef2551b186a0dc8db33157e772bdccda531be4df006ac8c2481",
+      "status": "FINALIZED",
+      "result": "MAJORITY_DISAGREE",
+      "leader_only": false,
+      "votes": {
+        "0x22Eda431B7fBC1216baE3b077a78c973a8719c58": "agree",
+        "0x534af64FFB6796Bc69aBf4C26c50788F1fFAfe56": "disagree",
+        "0x62718FbDf0509A398aA525C152D60c1F7A9d33D3": "disagree",
+        "0x6fe9DE3d0adc76D6416A13CD8107aaE49A3CF98F": "disagree",
+        "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3": "agree"
+      }
+    },
+    {
+      "action": "assess-2-retry",
+      "hash": "0x992d6c8d06c2df7e42eb8af952380798fc0e57ff68c648ab4d1504eeaf872080",
+      "status": "FINALIZED",
+      "result": "MAJORITY_AGREE",
+      "leader_only": false,
+      "votes": {
+        "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "agree",
+        "0x22Eda431B7fBC1216baE3b077a78c973a8719c58": "agree",
+        "0x240d2d7c8DF220110c26cfFFC532479319Cca0dC": "idle",
+        "0x725Ab89db6A9DD886Ba71Bc5E63a01070C325bE3": "agree",
+        "0x88E148Da14d45c5a5DD2DB25E776eBCBCe0Df539": "disagree"
+      }
+    }
+  ],
+  "outcomes": {
+    "rolloutguard-release-1": {
+      "challenge_pending": false,
+      "outcome": "COMPLIANT",
+      "release_id": "rolloutguard-release-1",
+      "round": 2
+    }
+  }
+}

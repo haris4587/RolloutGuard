@@ -14,3 +14,9 @@ RolloutGuard assesses staged feature releases against immutable policies coverin
 **Validation evidence:** https://github.com/haris4587/RolloutGuard/tree/main/evidence
 
 **Deployment status:** https://github.com/haris4587/RolloutGuard/blob/main/DEPLOYMENT.md
+
+**Explorer contract:** https://explorer-studio.genlayer.com/address/0xE7c1189ad8d66463767AA08098c028FC634E06B4
+
+**Independent live verification:** https://github.com/haris4587/RolloutGuard/blob/main/evidence/verified-live.json
+
+**Receipt hash chain:** https://github.com/haris4587/RolloutGuard/blob/main/evidence/hash-chain.txt

@@ -1,0 +1,108 @@
+{
+  "export_format": "rolloutguard-rpc-projection-v1",
+  "omitted": "Repeated binary calldata, state, logs and consensus history; verifier checks original RPC response before export.",
+  "hash": "0x23cc02c983597327ae1dbe292104902017832d9ff2d3677b3fc6ca02faf14307",
+  "from_address": "0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e",
+  "to_address": "0xE7c1189ad8d66463767AA08098c028FC634E06B4",
+  "statusName": "FINALIZED",
+  "result_name": "MAJORITY_AGREE",
+  "txExecutionResultName": "FINISHED_WITH_RETURN",
+  "leader_only": false,
+  "execution_mode": "NORMAL",
+  "created_at": "2026-11-26T07:58:17.514902+00:00",
+  "fees": {
+    "deposit": "94353600002588",
+    "userValue": "0",
+    "distribution": {
+      "leaderTimeunitsAllocation": "100",
+      "validatorTimeunitsAllocation": "200",
+      "appealRounds": "0",
+      "executionBudgetPerRound": "94353600000000",
+      "totalMessageFees": "0",
+      "rotations": [
+        "0"
+      ],
+      "maxPriceGenPerTimeUnit": "2",
+      "storageFeeMaxGasPrice": "300000000",
+      "receiptFeeMaxGasPrice": "300000000"
+    },
+    "locked": {
+      "genPerTimeUnit": "1",
+      "storageUnitPrice": "250000000",
+      "receiptGasPrice": "250000000"
+    },
+    "consumed": {
+      "executionConsumed": "78628000000000",
+      "storageFeeUsed": "0",
+      "messageFeesConsumed": "0",
+      "messageFeesBudgetTotal": "0",
+      "leaderTimeunitsUsed": "1",
+      "validatorTimeunitsUsed": "3",
+      "perRound": [
+        {
+          "round": 0,
+          "consensusRound": "Accepted",
+          "leaderTimeunits": "1",
+          "validatorTimeunits": "3",
+          "maxValidatorTimeunits": "1"
+        }
+      ]
+    }
+  },
+  "consensus_data": {
+    "votes": {
+      "0x1B490819e040562a5fb40CD64B1c70D4419c38d1": "agree",
+      "0x240d2d7c8DF220110c26cfFFC532479319Cca0dC": "agree",
+      "0x4eeaD269a60bB89c98a23c1BCd0bd101CafD90E0": "idle",
+      "0x5e880d85a70De78dDEf86236d57c42e73F560615": "idle",
+      "0xe358f855C96d8E7243836cf986eb037175B9467e": "agree"
+    },
+    "leader_receipt": [
+      {
+        "mode": "leader",
+        "vote": null,
+        "execution_result": "SUCCESS",
+        "nondet_disagree": null,
+        "model": "policy:prd-minimax-m3",
+        "eq_outputs": {},
+        "result": "null"
+      },
+      {
+        "mode": "validator",
+        "vote": "agree",
+        "execution_result": "SUCCESS",
+        "nondet_disagree": null,
+        "model": "policy:prd-minimax-m3",
+        "result": "null"
+      }
+    ],
+    "validators": [
+      {
+        "mode": "validator",
+        "vote": "idle",
+        "execution_result": "ERROR",
+        "nondet_disagree": null
+      },
+      {
+        "mode": "validator",
+        "vote": "agree",
+        "execution_result": "SUCCESS",
+        "nondet_disagree": null,
+        "model": "policy:prd-mistral-large-2512"
+      },
+      {
+        "mode": "validator",
+        "vote": "idle",
+        "execution_result": "ERROR",
+        "nondet_disagree": null
+      },
+      {
+        "mode": "validator",
+        "vote": "agree",
+        "execution_result": "SUCCESS",
+        "nondet_disagree": null,
+        "model": "policy:prd-qwen3.8-27b"
+      }
+    ]
+  }
+}
