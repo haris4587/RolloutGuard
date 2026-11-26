@@ -1,0 +1,39 @@
+{
+  "feature": "search-v2",
+  "environment": "production",
+  "release_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "complete": true,
+  "coverage_note": "Synthetic demonstration only: complete records for the observed stages, not authenticated production telemetry.",
+  "stages": [
+    {
+      "id": "canary",
+      "start": 1795600000,
+      "end": 1795600060,
+      "peak_exposure_bps": 1000,
+      "requests": 1000,
+      "errors": 2,
+      "p95_ms": 200,
+      "triggered_at": 0,
+      "rollback_at": 0,
+      "rollback_exposure_bps": 0,
+      "flag_evidence": "search-v2 production commit aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa: only opted-in EU cohort enabled; peak exposure 1000 basis points of all users.",
+      "monitoring_evidence": "All requests in the opted-in EU cohort were monitored: 1000 requests, 2 errors, p95 200 ms. No monitoring gaps.",
+      "incident_evidence": "No rollout incident or rollback trigger occurred during this stage. No rollback was performed."
+    },
+    {
+      "id": "expand",
+      "start": 1795600060,
+      "end": 1795600120,
+      "peak_exposure_bps": 5000,
+      "requests": 1000,
+      "errors": 2,
+      "p95_ms": 200,
+      "triggered_at": 0,
+      "rollback_at": 0,
+      "rollback_exposure_bps": 0,
+      "flag_evidence": "search-v2 production commit aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa: only opted-in EU cohort enabled; peak exposure 5000 basis points of all users.",
+      "monitoring_evidence": "All requests in the opted-in EU cohort were monitored: 1000 requests, 2 errors, p95 200 ms. No monitoring gaps.",
+      "incident_evidence": "No rollout incident or rollback trigger occurred during this stage. No rollback was performed."
+    }
+  ]
+}

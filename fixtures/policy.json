@@ -1,0 +1,28 @@
+{
+  "feature": "search-v2",
+  "environment": "production",
+  "operator": "0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e",
+  "attestor": "0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e",
+  "reviewer": "0xcD72fA5B6A496d84B4A10bCFF31D3B7c12346a9e",
+  "separate_duties": false,
+  "rollback_seconds": 120,
+  "semantic_requirements": "Only the opted-in EU cohort may receive search-v2. All requests in that cohort must be monitored. Incident evidence must explicitly describe whether a rollback trigger occurred.",
+  "stages": [
+    {
+      "id": "canary",
+      "max_exposure_bps": 1000,
+      "min_duration_seconds": 60,
+      "min_requests": 100,
+      "max_error_bps": 100,
+      "max_p95_ms": 300
+    },
+    {
+      "id": "expand",
+      "max_exposure_bps": 5000,
+      "min_duration_seconds": 60,
+      "min_requests": 100,
+      "max_error_bps": 100,
+      "max_p95_ms": 300
+    }
+  ]
+}

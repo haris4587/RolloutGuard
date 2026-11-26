@@ -1,0 +1,1 @@
+{"name":"rolloutguard","version":"1.0.0","private":true,"type":"module","scripts":{"schema":"node scripts/schema.mjs","verify:live":"node scripts/verify_live.mjs"},"dependencies":{"genlayer-js":"1.1.8"}}

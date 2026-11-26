@@ -1,0 +1,14 @@
+{
+  "canary": {
+    "status": "SUPPORTED",
+    "flag_quote": "search-v2 production commit aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa: only opted-in EU cohort enabled; peak exposure 1000 basis points of all users.",
+    "monitor_quote": "All requests in the opted-in EU cohort were monitored: 1000 requests, 2 errors, p95 200 ms. No monitoring gaps.",
+    "incident_quote": "No rollout incident or rollback trigger occurred during this stage. No rollback was performed."
+  },
+  "expand": {
+    "status": "SUPPORTED",
+    "flag_quote": "search-v2 production commit aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa: only opted-in EU cohort enabled; peak exposure 5000 basis points of all users.",
+    "monitor_quote": "All requests in the opted-in EU cohort were monitored: 1000 requests, 2 errors, p95 200 ms. No monitoring gaps.",
+    "incident_quote": "No rollout incident or rollback trigger occurred during this stage. No rollback was performed."
+  }
+}
